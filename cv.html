@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-side-container">
+      <div class="wrapper">
+        <div class="profile">
+          <h1>RENE BOY L. ANDOY </h1>
+          <span>web developer</span>
+        </div>
+        <div class="profile-picture">
+          <img src="sample.jpg" alt="">
+        </div>
+        <div class="contact-info">
+          <i class="fa fa-id-card-o"></i>
+          <div class="contact-details">
+            <span>Phone: 09201772484</span>
+            <span>Email: andoyandoy5@gmail.com</span>
+            <span>Skype: andoyandoy5</span>
+          </div>
+        </div>
+        <div class="social-media">
+          <i class="fa fa-rss-square"></i>
+          <div class="social-media-details">
+            <span>Linked In:<a href=" https://www.linkedin.com/in/rene-boy-andoy">https://www.linkedin.com/in/rene-boy-andoy</a></span>
+            <span>Facebook: <a href="https://www.facebook.com/zusez3">https://www.facebook.com/zusez3</a></span>
+          </div>
+        
+        </div>
+      </div>
+      <div class="graph">
+        <div id="language-graph" style="width:100%;max-width:700px"></div>
+        <div id="skill-graph" style="width:100%;max-width:700px"></div>
+      </div>  
+    </div>
+    <div class="right-side-container"> 
+      <div class="information">
+        <span>Highly motivated and hardworking individual seeks any position wherein I will be able to contribute my experience prior to the needs of the company and gain more knowledge and opportunity for new challenges.</span>
+        <section class="experience"> 
+          <h2 class="title"><hr>EXPRERIENCE<hr></h2>
+          <div class="work">
+            <h3 class="work-title">
+              E-HORIZON PHILIPPINES INC. <span>– software engineer</span>
+            </h3>
+            <span>2014 – 2018 </span>
+            <div class="task">
+              <ul>
+                <li>Develop API for subscriber registration, update information</li>
+                <li>Develop API for subscriber registration, update information</li>
+                <li>Develop API for subscriber registration, update information</li>
+              </ul>
+            </div>
+          </div>
+          <div class="work">
+            <h3 class="work-title">
+              E-HORIZON PHILIPPINES INC. <span>– software engineer</span>
+            </h3>
+            <span>2014 – 2018 </span>
+            <div class="task">
+              <ul>
+                <li>Develop API for subscriber registration, update information</li>
+                <li>Develop API for subscriber registration, update information</li>
+                <li>Develop API for subscriber registration, update information</li>
+              </ul>
+            </div>
+          </div>
+          <div class="work">
+            <h3 class="work-title">
+              E-HORIZON PHILIPPINES INC. <span>– software engineer</span>
+            </h3>
+            <span>2014 – 2018 </span>
+            <div class="task">
+              <ul>
+                <li>Develop API for subscriber registration, update information</li>
+                <li>Develop API for subscriber registration, update information</li>
+                <li>Develop API for subscriber registration, update information</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="education">
+          <h2 class="title"><hr>EDUCATION<hr></h2> 
+          <div class="school">
+            <ul>
+              <li> STI <span>– COLLEGE SURIGAO</span> Bachelor of science in information technology</li>
+              <span>2014 – 2018 </span>
+            </ul>
+          </div> 
+        </section>
+        <section class="certificate">
+          <h2 class="title"><hr>CERTIFICATE<hr></h2>
+          <div class="entity">
+            <ul>
+              <li>CIVIL SERVICE ELIGIBILITY HOLDER 
+              </li>
+              <span>2014 – 2018 </span>
+              <li>
+                Department of Information and Communication Technology – PASSED DIAGNOSTIC EXAM for ICT proficiency certification examination
+              </li>
+              <span>2014 – 2018 </span>
+            </ul>
+          </div>
+        </section>
+        <section class="recognition">
+          <h2 class="title"><hr>RECOGNITION RECEIVED<hr></h2>
+          <ul>
+            <li>Tagisan ng Talino - Apps and Running, STI Cagayan</li>
+            <span>2014 – 2018 </span>
+            <li>Java Programming Contest, STI Surigao – 1st Feb 14, 2017</li>
+            <span>2014 – 2018 </span>
+            <li>Java Programming Contest, STI Surigao – 2nd</li>
+            <span>2014 – 2018 </span>
+            <li>Mobile App Programming Contest, STI Surigao – 1st</li>
+            <span>2014 – 2018 </span>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<script>
+  var xArray = [10, 10, 8];
+  var yArray = ["CEBUANO ", "FILIPINO ", "ENGLISH "];
+
+  var data = [{
+    x:xArray,
+    y:yArray,
+    type:"bar",
+    orientation:"h",
+    marker: {color:"rgba(255,0,0,0.6)"}
+  }];
+
+  var layout = {title:"LANGUAGE"};
+
+  Plotly.newPlot("language-graph", data, layout);
+
+  var xArray = [9, 9, 9, 9, 9, 8, 10]; 
+  var yArray = ["MYSQL ", "HTML ", "CSS ", "JAVASCRIPT ", "PHP ", "NODE-JS ", "REACT-JS"];
+
+  var data = [{
+    x:xArray,
+    y:yArray,
+    type:"bar",
+    orientation:"h",
+    marker: {color:"rgba(255,0,0,0.6)"}
+  }];
+
+  var layout = {title:"SKILLS"};
+
+  Plotly.newPlot("skill-graph", data, layout);
+</script>
